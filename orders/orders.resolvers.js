@@ -2,7 +2,9 @@ const ordersModel = require("./orders.model");
 
 module.exports = {
   Query: {
-    orders: () => {},
+    orders: () => {
+      return ordersModel.getAllOrders();
+    },
   },
 };
 
